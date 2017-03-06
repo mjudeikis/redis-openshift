@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  creationTimestamp: null
+  labels:
+    app: redis-build
+    name: redis
+  name: redis-build
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: redis:latest
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    contextDir: image
+    git:
+      uri: https://github.com/mangirdaz/redis-openshift.git
+    type: Git
+  strategy:
+    dockerStrategy:
+      from:
+        kind: ImageStreamTag
+        name: rhel7:latest
+        namespace: openshift
+    type: Docker
+  triggers: []
+status:
+  lastVersion: 0

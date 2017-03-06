@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: master
+    role: service
+  name: redis-master
+spec:
+  ports:
+    - port: 6379
+      targetPort: 6379
+  selector:
+    redis-master: "true"

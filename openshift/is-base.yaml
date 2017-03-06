@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ImageStream
+metadata:
+  generation: 2
+  labels:
+    app: rhel7-base
+    name: rhel7-base
+  name: rhel7
+spec:
+  dockerImageRepository: registry.access.redhat.com/rhel7
