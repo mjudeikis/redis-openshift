@@ -14,7 +14,7 @@
 
 FROM rhel7
 
-RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+RUN yum install epel-release
 
 RUN yum install redis hostname -y ; yum clean all
 
