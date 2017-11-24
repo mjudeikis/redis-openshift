@@ -14,7 +14,7 @@
 
 FROM rhel7
 
-RUN yum install epel-release
+RUN yum install epel-release -y
 
 RUN yum install redis hostname -y ; yum clean all
 
