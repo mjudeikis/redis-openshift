@@ -4,7 +4,7 @@ The following document describes the deployment of a reliable, multi-node Redis 
 
 ### Prerequisites
 
-This example assumes that you have a Opesnhift cluster installed and running, and that you have installed the ```oc``` command line tool somewhere in your path.
+This example assumes that you have a Openshift cluster installed and running, and that you have installed the ```oc``` command line tool somewhere in your path.
 
 
 ### Run 
